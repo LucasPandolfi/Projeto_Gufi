@@ -12,6 +12,13 @@ VALUES ('Administrador', 'adm@adm.com', 'adm123', 'Não informado', '06/02/2020',
 		('Carol', 'carol@email.com', 'carol123', 'Feminino', '06/02/2020', 2),
 		 ('Saulo', 'saulo@email.com', 'saulo123', 'Masculino', '06/02/2020', 2);
 
+INSERT INTO Usuario (NomeUsuario, Email, Senha, Genero, DataNascimento, IdTipoUsuario)
+VALUES ('Matheus', 'math@Eboy.com', 'math123', 'Não informado', '07/02/2024', 2);
+
+INSERT INTO Usuario (NomeUsuario, Email, Senha, Genero, DataNascimento, IdTipoUsuario)
+VALUES ('Lucas', 'lucas@Email.com', 'lucas123', 'Masculino', '07/01/2001', 2),
+		('Davi', 'davi@Email.com', 'davi123', 'Masculino', '26/01/2002', 2)
+
 INSERT INTO Instituicao (CNPJ, NomeFantasia, Endereco)
 VALUES ('11111111111111', 'Escola SENAI de Informática', 'Alameda Barão de Limeira, 538')
 
@@ -25,3 +32,5 @@ INSERT INTO Presenca (IdUsuario, IdEvento, Situacao)
 VALUES (2, 2, 'Agendada'), (2, 3, 'Confirmada'), (3, 1, 'Não compareceu');
 
 SELECT * FROM Presenca
+SELECT * FROM TipoUsuario
+SELECT * FROM TipoEvento
